@@ -1,0 +1,19 @@
+{
+  "htmlFiles": [
+    {
+      "fileId": "0Bx0FA_43unUJYTNpRkJqUUttSDQ",
+      "contentType": "text/html",
+      "name": "stylish-portfolio.html",
+      "path": "0Bx0FA_43unUJV2xHYW5FOTJUc0k"
+    }
+  ],
+  "cssFiles": [
+    {
+      "fileId": "0Bx0FA_43unUJbk93bllRSmE0d0U",
+      "contentType": "text/css",
+      "name": "stylish-portfolio.css",
+      "path": "0Bx0FA_43unUJV2xHYW5FOTJUc0k/css"
+    }
+  ],
+  "javascriptFiles": []
+}
