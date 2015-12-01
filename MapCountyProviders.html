@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Urology Patient Referral Analytics</title>
+    <title>UNC Patient Referral Analytics</title>
     <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -18,15 +18,14 @@
 
   <body>
 
-    <!-- Side Menu -->
+     <!-- Side Menu -->
     <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="icon-reorder"></i></a>
     <div id="sidebar-wrapper">
       <ul class="sidebar-nav">
         <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="icon-remove"></i></a>
-        <li class="sidebar-brand"><a href="#top">Main Menu</a></li>
-        <li><a href="#top">Home</a></li>
-        <li><a href="#portfolio">Examples</a></li>
-        <li><a target="_blank" href="http://uncurologyanalytics.blogspot.com/">Data Respository</a></li>
+        <li class="sidebar-brand"><a href="http://data.uncurology.com#top">Main Menu</a></li>
+        <li><a href="http://data.uncurology.com#top">Home</a></li>
+        <li><a href="http://data.uncurology.com#portfolio">Examples</a></li>
         <li><a href="TopAnnualProviders.html">Top Provider Referrals (Yearly)</a></li>
         <li><a href="TopProviders.html">Top Providers Referrals (All Years)</a></li>
         <li><a href="TopGroups.html">Top Group Referrals</a></li>
@@ -41,7 +40,7 @@
     </div>
     <!-- /Side Menu -->
   
-    <!-- Full Page Image Header Area -->
+    <!-- Full Page Image Header Area 
     <div id="top" class="header">
       <div class="vert-text">
         <h1>UNC Urology</h1>
@@ -50,9 +49,9 @@
         <a href="#services" class="btn btn-default btn-lg">Find Out More</a>
       </div>
     </div>
-    <!-- /Full Page Image Header Area -->
+     /Full Page Image Header Area -->
     
-    <!-- Services -->
+    <!-- Services
     <div id="services" class="services">
       <div class="container">
         <div class="row">
@@ -93,9 +92,9 @@
         </div>
       </div>
     </div>
-    <!-- /Services -->
+    /Services -->
 
-    <!-- Intro -->
+    <!-- Intro
     <div id="intro" class="intro">
       <div class="container">
         <div class="row">
@@ -107,7 +106,7 @@
         </div>
       </div>
     </div>
-    <!-- /Intro -->
+     /Intro -->
     <!-- Callout 
     <div class="callout">
       <div class="vert-text">
@@ -116,24 +115,52 @@
       </div>
     </div>
     /Callout -->
+    
     <!-- Portfolio -->
-    <div id ="portfolio" class="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4 text-center">
-            <h2>Data Visualization Types</h2>
-            <h4>(Click Thumbnails to Open Interactive Data)</h4>
-
-            <hr>
-          </div>
-        </div>
+      <div class="callout">
+      <div class="vert-text">
+            <h2>Map of Practice Referrals by County</h2>
+            <h3>(Click to Interact with Data)</h3>
+      </div>
+    </div>
+    <hr>
+        <div class="container">
+    
+        <!-- used for multiple embedded items
         <div class="row">
           <div class="col-md-4 col-md-offset-2 text-center">
             <div class="portfolio-item">
-              <a  target="_blank" href="http://uncurologyanalytics.blogspot.com/2015/09/top-referrign-providers.html"><img class="img-portfolio img-responsive" src="img/1-Screen Shot 2015-09-09 at 10.56.40 AM.png"></a>
-              <h4>Medical Providers</h4>
-            </div>
+            -->
+               <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
+               <div class='tableauPlaceholder' style='width: 1120px; height: 1133px;'>
+                   <noscript><a href='#'><img alt='North Carolina Practice Group Referrals by County' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ur&#47;UrologyReferralsperCounty&#47;Story1&#47;1_rss.png' style='border: none' /></a></noscript>
+                   <object class='tableauViz' width='1120' height='1133' style='display:none;'>
+                       <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                       <param name='site_root' value='' />
+                       <param name='name' value='UrologyReferralsperCounty&#47;Story1' />
+                       <param name='tabs' value='no' />
+                       <param name='toolbar' value='yes' />
+                       <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ur&#47;UrologyReferralsperCounty&#47;Story1&#47;1.png' /> 
+                       <param name='animate_transition' value='yes' />
+                       <param name='display_static_image' value='yes' />
+                       <param name='display_spinner' value='yes' />
+                       <param name='display_overlay' value='yes' />
+                       <param name='display_count' value='yes' />
+                       <param name='filter' value='%3Aembed=y' />
+                       <param name='filter' value='%3AshowVizHome=no' />
+                       <param name='filter' value='%3AshowTabs=y' />
+                       <param name='filter' value='%3Adisplay_count=y' />
+                       <param name='filter' value='%3Adisplay_static_image=y' />
+                       </object>
+                       </div>
           </div>
+                
+    <!-- old link
+    <a  target="_blank" href="http://uncurologyanalytics.blogspot.com/2015/09/top-referrign-providers.html"><img class="img-portfolio img-responsive" src="img/1-Screen Shot 2015-09-09 at 10.56.40 AM.png"></a> 
+
+              <h4>Medical Providers</h4>     -->
+
+<!-- Additional Portfolio Space
           <div class="col-md-4 text-center">
             <div class="portfolio-item">
               <a  target="_blank" href="http://uncurologyanalytics.blogspot.com/2015/09/referring-and-non-referring-summary.html"><img class="img-portfolio img-responsive" src="img/2-Screen Shot 2015-09-09 at 8.17.28 PM.png"></a>
@@ -144,34 +171,36 @@
         <div class="row">
           <div class="col-md-4 col-md-offset-2 text-center">
             <div class="portfolio-item">
-              <a  target="_blank" href="page1.html"><img class="img-portfolio img-responsive" src="img/3-Screen Shot 2015-09-09 at 10.58.56 AM.png"></a>
+              <a  target="_blank" href="http://uncurologyanalytics.blogspot.com/2015/09/providers-referral-regional-maps.html"><img class="img-portfolio img-responsive" src="img/3-Screen Shot 2015-09-09 at 10.58.56 AM.png"></a>
               <h4>Regional Maps</h4>
             </div>
           </div>
           <div class="col-md-4 text-center">
             <div class="portfolio-item">
-              <a  target="_blank" href="page4.html"><img class="img-portfolio img-responsive" src="img/4-Screen Shot 2015-09-09 at 10.59.33 AM.png"></a>
+              <a  target="_blank" href="http://uncurologyanalytics.blogspot.com/2015/09/searchable-all-providers-list-with.html"><img class="img-portfolio img-responsive" src="img/4-Screen Shot 2015-09-09 at 10.59.33 AM.png"></a>
               <h4>Diagnosis</h4>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- /Portfolio -->
+    Additional Portfolio Space -->
+    
 
     <!-- Call to Action -->
     <div class="call-to-action">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center">
-           <h3>Now it's time to explore the data.</h3>
-            <a target="_blank" href="http://uncurologyanalytics.blogspot.com/" class="btn btn-lg btn-default">Data Site</a>
+           <h3>Like to see more or have a question?</h3>
+           <a target="_blank" href="http://uncurologyanalytics.blogspot.com/" class="btn btn-lg btn-default">Data Repository</a>
             <a href="mailto:jcohl@med.unc.edu?Subject=Urology Referral Site" class="btn btn-lg btn-primary">Message Me</a>
           </div>
         </div>
       </div>
     </div>
     <!-- /Call to Action -->
+
 
     <!-- Footer -->
     <footer>
@@ -184,7 +213,7 @@
               <li><i class="icon-dribbble icon-2x"></i></li>
             </ul>-->
             <hr>
-            <p>Last Updated Post: 11/30/15</p>
+            <p>UNC Urology 2015</p>
           </div>
         </div>
       </div>
