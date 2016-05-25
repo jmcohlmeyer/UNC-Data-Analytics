@@ -1,191 +1,269 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<!doctype html>
+<html class="no-js" lang="en">
 
-    <title>Urology Patient Referral Analytics</title>
-    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-<!-- Bootstrap CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Urology Patient Referral Analytics</title>
+        <meta name="description" content="Analytics Data for Referrals to UNC Urology">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Additional CSS -->
-    <link href="css/UNCAnalytics.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  </head>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-  <body>
+        <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+        <link rel="stylesheet" href="css/UNCAnalytics.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link href="css/bootstrap.css" rel="stylesheet">
 
-<!-- Side Menu -->
-    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="icon-reorder"></i></a>
-    <div id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="icon-remove"></i></a>
-        <li class="sidebar-brand"><a href="#top">Main Menu</a></li>
-        <li><a href="#top">Home</a></li>
-        <li><a href="#portfolio">Examples</a></li>
-        <li><a target="_blank" href="http://uncurologyanalytics.blogspot.com/">Data Respository</a></li>
-        <li><a href="TopAnnualProviders.html">Top Provider Referrals (Yearly)</a></li>
-        <li><a href="TopProviders.html">Top Providers Referrals (All Years)</a></li>
-        <li><a href="TopGroups.html">Top Group Referrals</a></li>
-        <li><a href="MapCountyProviders.html">Map - County Providers Proportion</a></li>
-        <li><a href="MapGroups.html">Map - Referral by Practice Group</a></li>
-        <li><a href="MapDiagnosis.html">Map - Referral by Diagnosis</a></li>
-        <li><a href="ProviderListPhotos.html">Provider List with Photos</a></li>
-        <li><a href="ProviderListFast.html">Provider List Fast Loading</a></li>
-        <li><a href="ReferralRates.html">Monthly and Quaterly Referral Rates</a></li>
-        <li><a href="ReferralsbyHospitalAffiliation.html">Referrals by Hospital Affiliation</a></li>
-        <li><a href="NCCancerRates.html">NC Cancer Rates and Cases</a></li>
-        <li><a href="mailto:jcohl@med.unc.edu?Subject=Urology Referral Site">Contact</a></li>
-      </ul>
-    </div>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
 
-<!-- Full Page Image Header Area -->
-    <div id="#mainBG" data-type="background" class="header">
-      <div class="vert-text">
-        <h1>UNC Urology</h1>
-        <h2>Patient Referral Analytics</h2>
-        <h3><em>Your</em> Source For Interactive Data, <em>You</em> Costumize Yourself</h3>
-        <a href="#services" class="btn btn-default btn-lg">Find Out More</a>
-      </div>
-    </div>
-    
-<!-- Services -->
-    <div id="services" class="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4 text-center">
-            <h2>Interactive Graphics</h2>
-            <hr>
-          </div>
+    <body>
+        <!-- Side Menu
+         <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="icon-reorder"></i></a>
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                 <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="icon-remove"></i></a>
+                <div include-HTML="js/menuData.html"></div>
+            </ul>
         </div>
-        <div class="row">
-          <div class="col-md-2 col-md-offset-2 text-center">
-            <div class="service-item">
-              <i class="service-icon icon-user-md"></i> 
-              <h4>Medical Providers</h4>
-              <p>Data that is specifically geared to display how providers send patients to the Urology Department.</p>
-            </div>
-          </div>
-          <div class="col-md-2 text-center">
-            <div class="service-item">
-              <i class="service-icon icon-hospital"></i>
-              <h4>Medical Groups</h4>
-              <p>Want to know which practice groups do or don't send patients to UNC?</p>
-            </div>
-          </div>
-          <div class="col-md-2 text-center">
-            <div class="service-item">
-              <i class="service-icon icon-globe"></i>
-              <h4>Regional Maps</h4>
-              <p>Fun maps which accurately display the provider and diagnosis information by metro, county, or city.</p>
-            </div>
-          </div>
-          <div class="col-md-2 text-center">
-            <div class="service-item">
-              <i class="service-icon icon-stethoscope"></i>
-              <h4>Diagnosis</h4>
-              <p>Interested to find out which diagnosis is typically sent from a provider or region?</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+        Side Menu -->
 
-<!-- Intro -->
-    <div id="intro" class="intro">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <h2>This site contains primarily business intelligence data displayed in a variety of visualizations and interactive graphics.</h2>
-            <p class="lead">Updates and additional information can be found at the <a target="_blank" href="http://uncurologyanalytics.blogspot.com/">Urology Data Repository</a>.</p>
-            <a href="#portfolio" class="btn btn-default btn-lg">See Examples</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-<!-- Portfolio -->
-    <div id ="portfolio" class="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4 text-center">
-            <h2>Data Visualization Types</h2>
-            <h4>(Click Thumbnails to Open Interactive Data)</h4>
-            <hr>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
-            <div class="portfolio-item">
-              <a  target="_blank" href="http://uncurologyanalytics.blogspot.com/2015/09/top-referrign-providers.html"><img class="img-portfolio img-responsive" src="img/1-Screen Shot 2015-09-09 at 10.56.40 AM.png"></a>
-              <h4>Medical Providers</h4>
-            </div>
-          </div>
-          <div class="col-md-4 text-center">
-            <div class="portfolio-item">
-              <a  target="_blank" href="http://uncurologyanalytics.blogspot.com/2015/09/referring-and-non-referring-summary.html"><img class="img-portfolio img-responsive" src="img/2-Screen Shot 2015-09-09 at 8.17.28 PM.png"></a>
-              <h4>Medical Groups</h4>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
-            <div class="portfolio-item">
-              <a  target="_blank" href="page1.html"><img class="img-portfolio img-responsive" src="img/3-Screen Shot 2015-09-09 at 10.58.56 AM.png"></a>
-              <h4>Regional Maps</h4>
-            </div>
-          </div>
-          <div class="col-md-4 text-center">
-            <div class="portfolio-item">
-              <a  target="_blank" href="page4.html"><img class="img-portfolio img-responsive" src="img/4-Screen Shot 2015-09-09 at 10.59.33 AM.png"></a>
-              <h4>Diagnosis</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+        <!-- Nav Bar Menu -->
 
-<!-- Call to Action -->
-    <div class="call-to-action">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-           <h3>Now it's time to explore the data.</h3>
-            <a target="_blank" href="http://uncurologyanalytics.blogspot.com/" class="btn btn-lg btn-default">Data Site</a>
-            <a href="mailto:jcohl@med.unc.edu?Subject=Urology Referral Site" class="btn btn-lg btn-primary">Message Me</a>
-          </div>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                         <span class="sr-only">Toggle navigation</span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                    </button>
+                     <a class="navbar-brand" href="#">Main Menu</a>
+                </div>
+        
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a target="_blank" href="http://data.uncurology.com/">Home</a>
+                        </li>
+                        <li class="dropdown">
+                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Top Referrals <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="TopAnnualProviders.html">Top Provider (Yearly)</a>
+                                </li>
+                                <li><a href="TopProviders.html">Top Providers (All Years)</a>
+                                </li>
+                                <li><a href="TopGroups.html">Top Practice Groups</a> 
+                                </li>
+                            </ul>
+                            <li class="dropdown">
+                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Provider Analysis and Trends <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="ProviderListPhotos.html">Provider List with Photos</a>
+                                    </li>
+                                    <li><a href="ProviderListFast.html">Provider List Fast Loading</a>
+                                    </li>
+                                    <li><a href="ProviderTrendForecast.html">Provider Trends and Forecast</a>
+                                    </li>
+                                    <li><a href="ReferralRates.html">Monthly and Quaterly Referral Rates</a>
+                                    </li>
+                                    <li><a href="Diagnosisforecast.html">Diagnosis Forecast</a>
+                                    </li>
+                                    <li><a href="TrendsAndForecast.html">Additional Trends and Forecast</a>
+                                    </li>
+                                </ul>
+
+                                <li class="dropdown">
+                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Maps<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="MapCountyProviders.html">County Providers Proportion</a>
+                                        </li>
+                                        <li><a href="MapGroups.html">Referral by Practice Group</a>
+                                        </li>
+                                        <li><a href="MapDiagnosis.html">Referral by Diagnosis</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Additional Data <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="ReferralsbyHospitalAffiliation.html">Referrals by Hospital Affiliation</a>
+                                        </li>
+                                        <li><a href="distancetravelled.html">Average Distance Travelled</a>
+                                        </li>
+                                        <li><a href="NCCancerRates.html">NC Cancer Rates and Cases</a>
+                                        </li>
+                                    </ul>
+                                    <li><a target="_blank" href="http://uncurologyanalytics.blogspot.com/">Data Respository</a>
+                                    </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <!-- Nav Bar Menu -->
+
+        <!-- Full Page Image Header Area -->
+        <div class="header" id="#top" data-type="background">
+            <div class="vert-text">
+                 <h1>UNC Urology</h1>
+                 <h2>Patient Referral Analytics</h2>
+                 <h3><em>Your</em> Source For Interactive Data, <em>You</em>  Customize Yourself</h3>
+                 <a href="#services" class="btn btn-default btn-lg">Find Out More</a>
+            </div>
         </div>
-      </div>
-    </div>
 
-<!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-         <div class="col-md-6 col-md-offset-3 text-center">
-            <!--  <ul class="list-inline">
-              <li><i class="icon-facebook icon-2x"></i></li>
-              <li><i class="icon-twitter icon-2x"></i></li>
-              <li><i class="icon-dribbble icon-2x"></i></li>
-            </ul>-->
-            <hr>
-            <p>Last Updated Post: 1/25/16</p>
-          </div>
+        <!-- Available Studies -->
+        <div id="services" class="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4 text-center">
+                         <h2>Interactive Graphics</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-2 text-center">
+                        <div class="service-item">
+                             <i class="service-icon icon-user-md"></i> 
+                             <h4>Medical Providers</h4>
+                            <p>Data that is specifically geared to display how providers send patients to the Urology Department.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <div class="service-item">
+                             <i class="service-icon icon-hospital"></i>
+                             <h4>Medical Groups</h4>
+                            <p>Want to know which practice groups do or don't send patients to UNC?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <div class="service-item">
+                             <i class="service-icon icon-globe"></i>
+                             <h4>Regional Maps</h4>
+                            <p>Fun maps which accurately display the provider and diagnosis information by metro, county, or city.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <div class="service-item">
+                             <i class="service-icon icon-stethoscope"></i>
+                             <h4>Diagnosis</h4>
+                            <p>Interested to find out which diagnosis is typically sent from a provider or region?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </footer>
-<!-- /Footer -->
 
-  <!-- JavaScript -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.js"></script>
+        <!-- Project Summary -->
+        <div id="intro" class="intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                         <h2>This site contains primarily business intelligence data displayed in a variety of visualizations and interactive graphics.</h2>
+                        <p class="lead">Updates and additional information can be found at the <a target="_blank" href="http://uncurologyanalytics.blogspot.com/">Urology Data Repository</a>.</p>
+                         <a href="#portfolio" class="btn btn-default btn-lg">See Examples</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <!-- Custom JavaScript Side Menu -->
-  <script src="js/sidemenu.js"></script>
-  
-  </body>
+        <!-- Project Examples -->
+        <div id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4 text-center">
+                         <h2>Data Visualization Types</h2>
+                         <h4>(Click Thumbnails to Open Interactive Data)</h4>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-2 text-center">
+                        <div class="portfolio-item">
+                            <a target="_blank" href="TopProviders.html">
+                                <img class="img-portfolio img-responsive" src="img/1-Screen Shot 2015-09-09 at 10.56.40 AM.png">
+                            </a>
+                             <h4>Medical Providers</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="portfolio-item">
+                            <a target="_blank" href="PracticeGroupReferralSummary.html">
+                                <img class="img-portfolio img-responsive" src="img/2-Screen Shot 2015-09-09 at 8.17.28 PM.png">
+                            </a>
+                             <h4>Medical Groups</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-2 text-center">
+                        <div class="portfolio-item">
+                            <a target="_blank" href="MapDiagnosis.html">
+                                <img class="img-portfolio img-responsive" src="img/3-Screen Shot 2015-09-09 at 10.58.56 AM.png">
+                            </a>
+                             <h4>Regional Maps</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="portfolio-item">
+                            <a target="_blank" href="ProviderListPhotos.html">
+                                <img class="img-portfolio img-responsive" src="img/4-Screen Shot 2015-09-09 at 10.59.33 AM.png">
+                            </a>
+                             <h4>Diagnosis</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="call-to-action">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                         <h3>Now it's time to explore the data.</h3>
+                         <a target="_blank" href="http://uncurologyanalytics.blogspot.com/" class="btn btn-lg btn-default">Data Site</a>
+                         <a href="mailto:jcohl@med.unc.edu?Subject=Urology Referral Site" class="btn btn-lg btn-primary">Message Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <hr>
+                        <p>Last Updated Post: 5/23/16</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /Footer -->
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>
+            window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+        </script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/bootstrap.js"></script>
+
+        <!-- Custom JavaScript Side Menu -->
+        <script src="js/sidemenu.js"></script>
+        <script src="js/menuData.js"></script>
+
+    </body>
 
 </html>
