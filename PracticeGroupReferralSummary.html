@@ -19,7 +19,8 @@
 
     <body>
 
-        <!-- Side Menu -->
+
+        <!-- Side Menu
          <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="icon-reorder"></i></a>
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
@@ -27,7 +28,108 @@
                 <div include-HTML="js/menuData.html"></div>
             </ul>
         </div>
-        <!-- /Side Menu -->
+        /Side Menu -->
+
+        <!-- NavBar with Mobile Responsiveness -->
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+
+                
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                         <span class="sr-only">Toggle navigation</span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" rel="home" href="#" title="Main Menu">
+                        <img src="img/small_white_80px.png">
+                    </a>
+                </div>
+
+
+                
+                <!-- NavBar links -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a target="_blank" href="http://data.cohlmeyer.info">Home</a>
+                        </li>
+                        <li class="dropdown">
+                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Top Referrals <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="TopAnnualProviders.html">Top Provider (Yearly)</a>
+                                </li>
+                                <li><a href="TopProviders.html">Top Providers (All Years)</a>
+                                </li>
+                                <li><a href="TopGroups.html">Top Practice Groups</a> 
+                                </li>
+                            </ul>
+                            <li class="dropdown">
+                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Provider Analysis and Trends <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="ProviderListPhotos.html">Provider List with Photos</a>
+                                    </li>
+                                    <li><a href="ProviderListFast.html">Provider List Fast Loading</a>
+                                    </li>
+                                    <li><a href="ProviderTrendForecast.html">Provider Trends and Forecast</a>
+                                    </li>
+
+                                    <li><a href="PracticeGroupReferralSummary.html">Practice Group Referral Summary</a>
+                                    </li>
+                                    <li><a href="ReferralRates.html">Monthly and Quaterly Referral Rates</a>
+                                    </li>
+                                    <li><a href="Diagnosisforecast.html">Diagnosis Forecast</a>
+                                    </li>
+                                    <li><a href="TrendsAndForecast.html">Additional Trends and Forecast</a>
+                                    </li>
+                                </ul>
+
+                                <li class="dropdown">
+                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Maps<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="MapCountyProviders.html">County Providers Proportion</a>
+                                        </li>
+                                        <li><a href="MapGroups.html">Referral by Practice Group</a>
+                                        </li>
+                                        <li><a href="MapDiagnosis.html">Referral by Diagnosis</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Additional Data <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="ReferralsbyHospitalAffiliation.html">Referrals by Hospital Affiliation</a>
+                                        </li>
+                                        <li><a href="distancetravelled.html">Average Distance Travelled</a>
+                                        </li>
+                                        <li><a href="NCCancerRates.html">NC Cancer Rates and Cases</a>
+                                        </li>
+                                    </ul>
+
+
+                                    <li class="dropdown">
+                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mobile Friendly Data<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="TopProvidersMobile.html">Top 10 Referrals (All Years)</a>
+                                            </li>
+                                            <li><a href="TopRecentProvidersMobile.html">Top Recent Referrals</a>
+                                            </li>
+                                            <li><a href="TopbyDiagnosisMobile.html">Top Referrals by Diagnosis</a>
+                                            </li>
+                                        </ul>
+                                        <li><a target="_blank" href="http://uncurologyanalytics.blogspot.com/">Data Respository</a>
+                                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </nav>
+
+        <!-- Nav Bar Menu -->
+
 
         <!-- Portfolio -->
         <div class="callout">
@@ -37,12 +139,12 @@
             </div>
         </div>
         <hr>
-        <!-- Portfolio -->
+        
         <div class="container">
 
              <h5>  
 
-            I have presorted the graphic to Urologists using the Medical Speciality dropbox. Please feel free to switch to any medical speciality, however, there are no non-referring providers outside of Urology.   The data is from January 1, 2011 to March 24, 2016.  The number 1 in the refer, non-refer, or both exhibit means the number of unique hits within that practice group and if there is a 1 in both columns then that group has both referring and non-referring providers. I am trying to think of a better way to display that data at the moment and will likely update in the weeks to come.
+            I have presorted the graphic to Urologists using the Medical Speciality dropbox. Please feel free to switch to any medical speciality, however, there are no non-referring providers outside of Urology.   The data is from January 1, 2011 to May 31, 2016.  The number 1 in the refer, non-refer, or both exhibit means the number of unique hits within that practice group and if there is a 1 in both columns then that group has both referring and non-referring providers. I am trying to think of a better way to display that data at the moment and will likely update in the weeks to come.
 
             <br>
 
@@ -56,7 +158,7 @@
 
             Total active Urologists in NC (referring and non-referring) = 372 <br>
 
-            Percentage of NC Urologists referring = 57.7%<br>
+            Percentage of NC Urologists referring = 57.6%<br>
 
             Total NC Urology Practice Groups = 113<br>
 
@@ -66,7 +168,7 @@
 
             <br>
 
-            (updated April 4, 2015)
+            (updated May 31, 2015)
 
             <br>
 
@@ -75,8 +177,7 @@
             <div class='tableauPlaceholder' style='width: 1004px; height: 869px;'>
                 <noscript>
                     <a href='#'>
-                        <img alt='Provider Referral Summary Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;ReferralandNonReferralPracticeGroups&#47;ProviderReferralSummaryDashboard&#47;1_rss.png' style='border: none'
-                        />
+                        <img alt='Provider Referral Summary Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;ReferralandNonReferralPracticeGroups&#47;ProviderReferralSummaryDashboard&#47;1_rss.png' style='border: none' />
                     </a>
                 </noscript>
                 <object class='tableauViz' width='1004' height='869' style='display:none;'>
@@ -97,6 +198,8 @@
                 </object>
             </div>
         </div>
+        
+
         <!-- Call to Action -->
         <div class="call-to-action">
             <div class="container">
@@ -109,8 +212,7 @@
                 </div>
             </div>
         </div>
-        <!-- /Call to Action -->
-
+ 
 
         <!-- Footer -->
         <footer>
@@ -128,10 +230,24 @@
         <!-- JavaScript -->
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.js"></script>
+        
+         <!-- Google Analytics -->
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        <!-- Custom JavaScript Side Menu -->
+  ga('create', 'UA-78975194-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+        <!-- Old JavaScript Side Menu 
         <script src="js/sidemenu.js"></script>
         <script src="js/menuData.js"></script>
+        -->
+
     </body>
 
 </html>

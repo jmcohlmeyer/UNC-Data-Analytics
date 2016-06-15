@@ -1,31 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
 
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Urology Patient Referral Analytics</title>
+        <meta name="description" content="Analytics Data for Referrals to UNC Urology">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>UNC Patient Referral Analytics</title>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <!-- Bootstrap core CSS -->
+
+        <link rel="stylesheet" href="css/UNCAnalytics.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
         <link href="css/bootstrap.css" rel="stylesheet">
 
-        <!-- Add custom CSS here -->
-        <link href="css/stylish-portfolio.css" rel="stylesheet">
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
 
     <body>
-
-
-        <!-- Nav Bar Menu -->
-
+        <!-- NavBar with Mobile Responsiveness  -->
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
-
-                <!-- Brand and toggle get grouped for better mobile display -->
+                
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                          <span class="sr-only">Toggle navigation</span>
@@ -37,7 +34,6 @@
                         <img src="img/small_white_80px.png">
                     </a>
                 </div>
-
 
                 <!-- NavBar links -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -105,8 +101,6 @@
                                             </li>
                                             <li><a href="TopRecentProvidersMobile.html">Top Recent Referrals</a>
                                             </li>
-                                            <li><a href="TopbyDiagnosisMobile.html">Top Referrals by Diagnosis</a>
-                                            </li>
                                         </ul>
                                         <li><a target="_blank" href="http://uncurologyanalytics.blogspot.com/">Data Respository</a>
                                         </li>
@@ -119,72 +113,24 @@
 
         <!-- Nav Bar Menu -->
 
-
-        <!-- Header -->
-        <div class="callout">
+        <!-- Full Page Image Header Area -->
+        <div class="header" id="#top" data-type="background">
             <div class="vert-text">
-                 <h2>Map of Practice Referrals by County</h2>
-                 <h3>(Click to Interact with Data)</h3>
-            </div>
-        </div>
-        <hr>
-
-        <div class="container">
-             <h5>Updated 6/8/16</h5> 
-            <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
-            <div class='tableauPlaceholder' style='width: 1020px; height: 1033px;'>
-                <noscript>
-                    <a href='#'>
-                        <img alt='Portion of Urologists in North Carolina Referring Patients ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;PortionofUrologistsinNorthCarolinaReferringPatients&#47;Story1&#47;1_rss.png' style='border: none' />
-                    </a>
-                </noscript>
-                <object class='tableauViz' width='1020' height='1033' style='display:none;'>
-                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                    <param name='site_root' value='' />
-                    <param name='name' value='PortionofUrologistsinNorthCarolinaReferringPatients&#47;Story1' />
-                    <param name='tabs' value='no' />
-                    <param name='toolbar' value='no' />
-                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;PortionofUrologistsinNorthCarolinaReferringPatients&#47;Story1&#47;1.png' />
-                    <param name='animate_transition' value='yes' />
-                    <param name='display_static_image' value='yes' />
-                    <param name='display_spinner' value='yes' />
-                    <param name='display_overlay' value='yes' />
-                    <param name='display_count' value='yes' />
-                    <param name='showTabs' value='y' />
-                </object>
+                 <h1>Oops...</h1>
+                 <h2>Something is missing</h2>
+                 <h3>404 Page Error</h3>
+                 <a href="http://data.cohlmeyer.info" class="btn btn-default btn-lg">Return Home</a>
             </div>
         </div>
 
-        <!-- Call to Action -->
-        <div class="call-to-action">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3 text-center">
-                         <h3>Like to see more or have a question?</h3>
-                         <a target="_blank" href="http://uncurologyanalytics.blogspot.com/" class="btn btn-lg btn-default">Data Repository</a>
-                         <a href="mailto:jcohl@med.unc.edu?Subject=Urology Referral Site" class="btn btn-lg btn-primary">Message Me</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- JS Sources-->
 
-
-        <!-- Footer -->
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3 text-center">
-          
-                        <hr>
-                        <p>UNC Urology 2016</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-
-        <!-- JavaScript -->
-        <script src="js/jquery.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>
+            window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+        </script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
         <script src="js/bootstrap.js"></script>
 
         <!-- Google Analytics -->
@@ -198,6 +144,11 @@
   ga('send', 'pageview');
 
 </script>
+        
+        <!-- old JavaScript Side Menu 
+        <script src="js/sidemenu.js"></script>
+        <script src="js/menuData.js"></script>
+        -->
     </body>
 
 </html>
